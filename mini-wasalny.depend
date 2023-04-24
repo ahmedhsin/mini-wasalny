@@ -1,0 +1,69 @@
+# depslib dependency file v1.0
+1682316687 source:/home/yuu/mini-wasalny/Graph.cpp
+	"Graph.h"
+
+1682317531 /home/yuu/mini-wasalny/Graph.h
+	"FileEngine.h"
+	"GraphTraversal.h"
+	"GraphMutator.h"
+	"ShortestPath.h"
+	"ConsoleGraph.h"
+	<unordered_map>
+	<vector>
+	<string>
+	<iostream>
+
+1682318025 source:/home/yuu/mini-wasalny/FileEngine.cpp
+	"FileEngine.h"
+
+1682317801 /home/yuu/mini-wasalny/FileEngine.h
+	<boost/serialization/vector.hpp>
+	<boost/serialization/unordered_map.hpp>
+	<boost/archive/text_oarchive.hpp>
+	<boost/archive/text_iarchive.hpp>
+	<fstream>
+	<unordered_map>
+	<vector>
+	<string>
+	<iostream>
+
+1682317531 source:/home/yuu/mini-wasalny/GraphMutator.cpp
+	"GraphMutator.h"
+
+1682317531 /home/yuu/mini-wasalny/GraphMutator.h
+	<string>
+	<unordered_map>
+	<vector>
+
+1682317531 source:/home/yuu/mini-wasalny/GraphTraversal.cpp
+	"GraphTraversal.h"
+
+1682317531 /home/yuu/mini-wasalny/GraphTraversal.h
+	<unordered_map>
+	<vector>
+	<string>
+	<iostream>
+
+1682317531 source:/home/yuu/mini-wasalny/ShortestPath.cpp
+	"ShortestPath.h"
+
+1682317531 /home/yuu/mini-wasalny/ShortestPath.h
+	<string>
+	<unordered_map>
+	<vector>
+
+1682316702 source:/home/yuu/mini-wasalny/main.cpp
+	<iostream>
+	"Graph.h"
+
+1682304071 /home/yuu/mini-wasalny/DataStorage.h
+
+1682317531 /home/yuu/mini-wasalny/ConsoleGraph.h
+	<iostream>
+	<unordered_map>
+	<vector>
+	<string>
+
+1682317531 source:/home/yuu/mini-wasalny/ConsoleGraph.cpp
+	"ConsoleGraph.h"
+
