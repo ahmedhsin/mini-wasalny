@@ -9,7 +9,7 @@ class ShortestPath
 {
     public:
         ShortestPath();
-        vector<string> Dijkstra(unordered_map<string, vector<string>> &adj);
+        pair<vector<string>, double> Dijkstra(unordered_map<string, vector<pair<string, double>>> &adj);
         virtual ~ShortestPath();
 
     protected:

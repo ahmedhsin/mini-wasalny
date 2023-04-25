@@ -12,10 +12,12 @@ Graph::Graph()
     this->Mutator = Mutator;
     this->ShortPath = Path;
     this->ConsoleG = consoleG;
-    /*vector<string>v = {"Alex", "Minia", "Assuit"};
+    /*
+    vector<pair<string, double>>v = {{"Alex", 35.5}, {"Minia", 80}, {"Assuit", 60.30}};
     this->adjacencyList["Cairo"] = v;
-    vector<string>vv = {"Cairo", "Minia", "AInSHames"};
-    this->adjacencyList["Assuit"] = vv;*/
+    vector<pair<string, double>>vv = {{"Cairo", 60.14}, {"Minia", 20}, {"AInSHames", 29.7}};
+    this->adjacencyList["Assuit"] = vv;
+    */
 }
 bool Graph::save(){
     DataStorage.save(this->adjacencyList);
@@ -51,7 +53,7 @@ bool Graph::DelEdge(string source, string destination) {
 bool Graph::DelGraph(){
     this->adjacencyList.clear();
 }
-vector<string> Graph::Dijkstra(){
+pair<vector<string>, double> Graph::Dijkstra(){
     return this->ShortPath.Dijkstra(this->adjacencyList);
 }
 void Graph::Print(){

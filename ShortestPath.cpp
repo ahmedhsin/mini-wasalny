@@ -4,8 +4,8 @@ ShortestPath::ShortestPath()
 {
     //ctor
 }
-vector<string> ShortestPath::Dijkstra(unordered_map<string, vector<string>> &adj){
-    vector<string> shortpath;
+pair<vector<string>, double> ShortestPath::Dijkstra(unordered_map<string, vector<pair<string, double>>> &adj){
+    pair<vector<string>, double> shortpath;
     //implement djkstra
     return shortpath;
 }

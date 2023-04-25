@@ -5,19 +5,19 @@ GraphMutator::GraphMutator()
     //ctor
 }
 
-bool GraphMutator::AddVertex(string vertex, unordered_map<string, vector<string>> &adj) {
+bool GraphMutator::AddVertex(string vertex, unordered_map<string, vector<pair<string, double>>> &adj) {
     // Implementation for adding a vertex
 }
 
-bool GraphMutator::AddEdge(string source, string destination, unordered_map<string, vector<string>> &adj) {
+bool GraphMutator::AddEdge(string source, string destination, unordered_map<string, vector<pair<string, double>>> &adj) {
     // Implementation for adding an edge between two vertices
 }
 
-bool GraphMutator::DelVertex(string vertex, unordered_map<string, vector<string>> &adj) {
+bool GraphMutator::DelVertex(string vertex, unordered_map<string, vector<pair<string, double>>> &adj) {
     // Implementation for deleting a vertex
 }
 
-bool GraphMutator::DelEdge(string source, string destination, unordered_map<string, vector<string>> &adj) {
+bool GraphMutator::DelEdge(string source, string destination, unordered_map<string, vector<pair<string, double>>> &adj) {
     // Implementation for deleting an edge between two vertices
 }
 

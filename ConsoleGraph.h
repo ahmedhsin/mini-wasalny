@@ -11,7 +11,7 @@ class ConsoleGraph
     public:
         ConsoleGraph();
         virtual ~ConsoleGraph();
-        void Print(unordered_map<string, vector<string>> &adj);
+        void Print(unordered_map<string, vector<pair<string, double>>> &adj);
     protected:
 
     private:

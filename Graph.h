@@ -18,7 +18,7 @@ class Graph
         Graph();
         vector<string> BFS();
         vector<string> DFS();
-        vector<string> Dijkstra();
+        pair<vector<string>, double> Dijkstra();
         bool save();
         bool load();
         bool DelGraph();
@@ -37,7 +37,7 @@ class Graph
         GraphMutator Mutator;
         ShortestPath ShortPath;
         ConsoleGraph ConsoleG;
-        unordered_map<string, vector<string>> adjacencyList;
+        unordered_map<string, vector<pair<string, double>>> adjacencyList;
 
 };
 
