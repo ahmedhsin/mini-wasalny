@@ -24,7 +24,8 @@ The program applies SOLID principles to improve its design and maintainability.
 
 The program uses the following third-party libraries:
 
-- Boost Serialization: for saving and loading the graph data from files.
+- ~~Boost Serialization: for saving and loading the graph data from files.~~
+- Saving and Loading Graph Data using nlohmann json.
 
 ## How to Use
 
