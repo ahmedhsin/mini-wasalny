@@ -11,8 +11,8 @@ class GraphTraversal
     public:
         GraphTraversal();
         virtual ~GraphTraversal();
-        vector<string> BFS(unordered_map<string, vector<pair<string, double>>> &adj);
-        vector<string> DFS(unordered_map<string, vector<pair<string, double>>> &adj);
+        vector<string> BFS(string start, unordered_map<string, vector<pair<string, double>>> &adj);
+        vector<string> DFS(string start, unordered_map<string, vector<pair<string, double>>> &adj);
 
 
     protected:

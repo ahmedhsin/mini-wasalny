@@ -16,8 +16,8 @@ class Graph
     public:
         virtual ~Graph();
         Graph();
-        vector<string> BFS();
-        vector<string> DFS();
+        vector<string> BFS(string start);
+        vector<string> DFS(string start);
         pair<vector<string>, double> Dijkstra();
         bool save();
         bool load();
