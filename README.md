@@ -24,8 +24,7 @@ The program applies SOLID principles to improve its design and maintainability.
 
 The program uses the following third-party libraries:
 
-- ~~Boost Serialization: for saving and loading the graph data from files.~~
-- Saving and Loading Graph Data using nlohmann json.
+- Boost Serialization: for saving and loading the graph data from files.
 
 ## How to Use
 
@@ -41,12 +40,12 @@ To build the program, you can follow these steps:
 
 1. Clone the repository to your local machine.
 2. Install a C++ compiler that supports C++11 or later, such as GCC or Clang.
-~~3. Install the Boost Serialization.~~
+3. Install the Boost Serialization.
 4. Run the following command to compile the program:
 
 ```
-g++ -Wall -fexceptions -g  -c main.cpp -o obj/Debug/main.o
-g++  -o bin/Debug/mini-wasalny obj/Debug/ConsoleGraph.o obj/Debug/FileEngine.o obj/Debug/Graph.o obj/Debug/GraphMutator.o obj/Debug/GraphTraversal.o obj/Debug/main.o obj/Debug/ShortestPath.o
-./bin/Debug/mini-wasalny
+g++ -std=c++11 -I include/ -I /path/to/boost/include/ -c *.cpp
+g++ -o mini-wasalny *.o -L /path/to/boost/lib/ -lboost_serialization
 ```
+
 5. Run the program

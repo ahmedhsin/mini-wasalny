@@ -1,0 +1,54 @@
+class FileEngine{
+  private:
+    filename;
+    filepath;
+  public:
+    FileEngine();
+    reload();
+    save();
+
+}
+class Graph {
+  private:
+     adjacencyList;
+  public:
+    Graph();
+    addCity(name);
+    addEdge(src, dest, weight);
+    deleteCity();
+    deleteEdge();
+    BFS(start);
+    DFS(start);
+    Dijkstra(src, dest);
+}
+class Model{
+  private:
+    fileEngine
+    graphs;
+  public:
+    Model();
+    addGraph();
+    displayGraph();
+    updateGraph();
+    deleteCity();
+    addEdge(src, dest, weight);
+    deleteCity();
+    deleteEdge();
+
+}
+/*Header*/
+#include <boost/archive/text_oarchive.hpp>
+#include <boost/archive/text_iarchive.hpp>
+#include <boost/serialization/vector.hpp>
+#include <fstream>
+add this command in linker "-lboost_serialization"
+/*des*/
+{
+   std::ifstream ifs("copy.ser");
+   boost::archive::text_iarchive ia(ifs);
+   ia & data;
+}
+/*ser*/
+std::ofstream ofs("copy.ser");
+    boost::archive::text_oarchive oa(ofs);
+oa & data;
