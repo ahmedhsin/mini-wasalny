@@ -27,12 +27,12 @@ bool Graph::load(){
     DataStorage.load(this->adjacencyList);
     return true;
 }
-vector<string> Graph::BFS(){
+vector<string> Graph::BFS(string start){
 
-    return this->Traversal.BFS(this->adjacencyList);
+    return this->Traversal.BFS(start ,this->adjacencyList);
 }
-vector<string> Graph::DFS(){
-    return this->Traversal.DFS(this->adjacencyList);
+vector<string> Graph::DFS(string start){
+    return this->Traversal.DFS(start ,this->adjacencyList);
 }
 
 bool Graph::AddVertex(string vertex) {
