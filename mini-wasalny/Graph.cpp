@@ -41,8 +41,8 @@ bool Graph::AddVertex(string vertex) {
     return this->Mutator.AddVertex(vertex, this->adjacencyList);
 }
 
-bool Graph::AddEdge(string source, string destination, bool Directed) {
-    return this->Mutator.AddEdge(source, destination, this->Directed, this->adjacencyList);
+bool Graph::AddEdge(string source, string destination,double Distance, bool Directed) {
+    return this->Mutator.AddEdge(source, destination,Distance, this->Directed, this->adjacencyList);
 }
 
 bool Graph::DelVertex(string vertex) {

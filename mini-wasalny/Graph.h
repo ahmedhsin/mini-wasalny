@@ -23,7 +23,7 @@ class Graph
         bool load();
         bool DelGraph();
         bool AddVertex(string vertex);
-        bool AddEdge(string source, string destination, bool Directed);
+        bool AddEdge(string source, string destination,double Distance, bool Directed);
         bool DelVertex(string vertex);
         bool DelEdge(string source, string destination, bool Directed);
         void Print();
