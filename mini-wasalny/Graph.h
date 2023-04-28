@@ -15,17 +15,17 @@ class Graph
 {
     public:
         virtual ~Graph();
-        Graph();
+        Graph(bool Directed);
         vector<string> BFS(string start);
         vector<string> DFS(string start);
-        pair<vector<string>, double> Dijkstra();
+        pair<vector<string>, double> Dijkstra(string source, string destination);
         bool save();
         bool load();
         bool DelGraph();
         bool AddVertex(string vertex);
-        bool AddEdge(string source, string destination);
+        bool AddEdge(string source, string destination, bool Directed);
         bool DelVertex(string vertex);
-        bool DelEdge(string source, string destination);
+        bool DelEdge(string source, string destination, bool Directed);
         void Print();
 
 
@@ -37,6 +37,7 @@ class Graph
         GraphMutator Mutator;
         ShortestPath ShortPath;
         ConsoleGraph ConsoleG;
+        bool Directed;
         unordered_map<string, vector<pair<string, double>>> adjacencyList;
 
 };

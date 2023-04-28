@@ -4,7 +4,8 @@ using namespace std;
 
 int main()
 {
-    Graph g;
+    Graph g(false);
+    g.Print();
     //g.DelGraph();
    // cout << "test";
     return 0;

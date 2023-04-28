@@ -10,7 +10,7 @@ bool GraphMutator::AddVertex(string vertex, unordered_map<string, vector<pair<st
     return true;
 }
 
-bool GraphMutator::AddEdge(string source, string destination, unordered_map<string, vector<pair<string, double>>> &adj) {
+bool GraphMutator::AddEdge(string source, string destination,bool Directed, unordered_map<string, vector<pair<string, double>>> &adj) {
     // Implementation for adding an edge between two vertices'
     return true;
 
@@ -22,7 +22,7 @@ bool GraphMutator::DelVertex(string vertex, unordered_map<string, vector<pair<st
 
 }
 
-bool GraphMutator::DelEdge(string source, string destination, unordered_map<string, vector<pair<string, double>>> &adj) {
+bool GraphMutator::DelEdge(string source, string destination,bool Directed, unordered_map<string, vector<pair<string, double>>> &adj) {
     // Implementation for deleting an edge between two vertices
     return true;
 

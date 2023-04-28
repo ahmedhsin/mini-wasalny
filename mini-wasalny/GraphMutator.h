@@ -10,9 +10,9 @@ class GraphMutator
         GraphMutator();
         virtual ~GraphMutator();
         bool AddVertex(string vertex, unordered_map<string, vector<pair<string, double>>> &adj);
-        bool AddEdge(string source, string destination, unordered_map<string, vector<pair<string, double>>> &adj);
+        bool AddEdge(string source, string destination,bool Directed, unordered_map<string, vector<pair<string, double>>> &adj);
         bool DelVertex(string vertex, unordered_map<string, vector<pair<string, double>>> &adj);
-        bool DelEdge(string source, string destination, unordered_map<string, vector<pair<string, double>>> &adj);
+        bool DelEdge(string source, string destination,bool Directed, unordered_map<string, vector<pair<string, double>>> &adj);
 
     protected:
 
