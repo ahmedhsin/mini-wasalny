@@ -1,0 +1,1273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1226</width>
+    <height>644</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>14</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="mainStack">
+    <property name="geometry">
+     <rect>
+      <x>-40</x>
+      <y>-10</y>
+      <width>1271</width>
+      <height>677</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(239, 255, 255);
+background-color: rgb(255, 220, 130);</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="page_2">
+     <widget class="QPushButton" name="UnDir_Graph">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>530</y>
+        <width>241</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+margin-left: 10px; border-radius: 25px;; color: white;
+color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+font: 700 14pt &quot;Terminal&quot;;
+background-color:rgb(0, 85, 0);
+
+margin-left: 10px; border-radius: 25px;; color: white;</string>
+      </property>
+      <property name="text">
+       <string>UnDirected Graph</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Dir_Graph">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>530</y>
+        <width>241</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+margin-left: 10px; border-radius: 25px;; color: white;
+color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+font: 700 14pt &quot;Terminal&quot;;
+background-color:rgb(0, 85, 0);
+
+margin-left: 10px; border-radius: 25px;; color: white;</string>
+      </property>
+      <property name="text">
+       <string>Directed Graph</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>460</y>
+        <width>401</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+font-size:32px;</string>
+      </property>
+      <property name="text">
+       <string>Please Choose Graph Type</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_43">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>50</y>
+        <width>631</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/imgs/logo.png);
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>30</y>
+        <width>401</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+font-size:32px;</string>
+      </property>
+      <property name="text">
+       <string>Welcome To Mini-Wasalny</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_18">
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>50</y>
+        <width>631</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/imgs/logo.png);
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="New_Graph">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>510</y>
+        <width>171</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(38, 148, 33);
+
+
+font: 700 14pt &quot;Terminal&quot;;
+border:1px solid rgb(255, 250, 244);
+border-radius: 35px;
+margin-left: 10px; border-radius: 25px; background:  rgb(38, 148, 33); color: white;
+background-color: rgb(255, 170, 0);
+background-color: #EC6408;
+color: rgb(195, 195, 195);
+color: rgb(255, 250, 244);</string>
+      </property>
+      <property name="text">
+       <string>New Graph</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Current_Graph">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>510</y>
+        <width>171</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(38, 148, 33);
+
+
+font: 700 14pt &quot;Terminal&quot;;
+border:1px solid rgb(255, 250, 244);
+border-radius: 35px;
+margin-left: 10px; border-radius: 25px; background:  rgb(38, 148, 33); color: white;
+background-color: rgb(255, 170, 0);
+background-color: #EC6408;
+color: rgb(195, 195, 195);
+color: rgb(255, 250, 244);</string>
+      </property>
+      <property name="text">
+       <string>Current Graph</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_19">
+     <widget class="QLabel" name="label_32">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>70</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(3, 3, 3)</string>
+      </property>
+      <property name="text">
+       <string>/second</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="GSpeed">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>68</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(3, 3, 3)
+</string>
+      </property>
+      <property name="specialValueText">
+       <string>0.1</string>
+      </property>
+      <property name="decimals">
+       <number>5</number>
+      </property>
+      <property name="minimum">
+       <double>-100.000000000000000</double>
+      </property>
+      <property name="value">
+       <double>0.500000000000000</double>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="displaygraph">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>532</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+margin-left: 10px; border-radius: 25px;; color: white;
+color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+font: 700 14pt &quot;Terminal&quot;;
+background-color:rgb(0, 85, 0);
+
+margin-left: 10px; border-radius: 25px;; color: white;</string>
+      </property>
+      <property name="text">
+       <string>Display Graph</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="edge">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>532</y>
+        <width>201</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+margin-left: 10px; border-radius: 25px;; color: white;
+font: 700 14pt &quot;Terminal&quot;;
+background-color:rgb(0, 85, 0);</string>
+      </property>
+      <property name="text">
+       <string>Edge</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>40</y>
+        <width>161</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(3, 3, 3)</string>
+      </property>
+      <property name="text">
+       <string>Visited Nodes Speed :</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="exit">
+      <property name="geometry">
+       <rect>
+        <x>1160</x>
+        <y>30</y>
+        <width>81</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+margin-left: 10px; border-radius: 25px;; color: white;
+color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+font: 700 14pt &quot;Terminal&quot;;
+background-color:rgb(0, 85, 0);
+
+margin-left: 10px; border-radius: 25px;; color: white;</string>
+      </property>
+      <property name="text">
+       <string>Exit</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sHistory">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>42</y>
+        <width>201</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+margin-left: 10px; border-radius: 25px;; color: white;
+font: 700 14pt &quot;Terminal&quot;;
+background-color:rgb(0, 85, 0);</string>
+      </property>
+      <property name="text">
+       <string>Show History</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_34">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>40</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(3, 3, 3)</string>
+      </property>
+      <property name="text">
+       <string>Graph Style :</string>
+      </property>
+     </widget>
+     <widget class="QStackedWidget" name="Qstack">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>142</y>
+        <width>491</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(236, 100, 8);
+drawRoundedRect :(rect, 15, 15);
+background-color:rgb(0, 85, 0);
+ border-radius: 25px;
+
+</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_20">
+       <widget class="QTextEdit" name="text_City">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>140</y>
+          <width>171</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 250, 244);
+color: rgb(0, 0, 0);
+</string>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Noto Sans';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="addTown">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>220</y>
+          <width>151</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+margin-left: 10px; border-radius: 25px;; color:  rgb(236, 100, 8);
+font: 700 14pt &quot;Terminal&quot;;
+background-color: rgb(255, 250, 244);
+background-color:  rgb(236, 100, 8);
+color:white;
+</string>
+        </property>
+        <property name="text">
+         <string>Add Town</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="deleteTown">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>220</y>
+          <width>151</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+margin-left: 10px; border-radius: 25px;; color:  rgb(236, 100, 8);
+font: 700 14pt &quot;Terminal&quot;;
+background-color: rgb(255, 250, 244);
+background-color:  rgb(236, 100, 8);
+color:white;</string>
+        </property>
+        <property name="text">
+         <string>Delete Town</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_35">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>70</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:  rgb(236, 100, 8);
+color:white;
+border-radius:10px;
+font: 700 20pt &quot;Terminal&quot;;
+font: 700 18pt &quot;Perpetua Titling MT&quot;;
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string>  Town</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page">
+       <widget class="QLabel" name="label_41">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>70</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:  rgb(236, 100, 8);
+color:white;
+border-radius:10px;
+font: 700 20pt &quot;Terminal&quot;;
+font: 700 18pt &quot;Perpetua Titling MT&quot;;
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string>  Town</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="startDFS">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>220</y>
+          <width>151</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+margin-left: 10px; border-radius: 25px;; color:  rgb(236, 100, 8);
+font: 700 14pt &quot;Terminal&quot;;
+background-color: rgb(255, 250, 244);
+background-color:  rgb(236, 100, 8);
+color:white;</string>
+        </property>
+        <property name="text">
+         <string>Start DFS</string>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="textCityTraversal">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>140</y>
+          <width>171</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 250, 244);
+color: rgb(0, 0, 0);</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="startBFS">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>220</y>
+          <width>151</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+margin-left: 10px; border-radius: 25px;; color:  rgb(236, 100, 8);
+font: 700 14pt &quot;Terminal&quot;;
+background-color: rgb(255, 250, 244);
+background-color:  rgb(236, 100, 8);
+color:white;
+</string>
+        </property>
+        <property name="text">
+         <string>Start BFS</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_21">
+       <widget class="QLabel" name="label_36">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>161</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:  rgb(236, 100, 8);
+color:white;
+ color: rgb(255, 250, 244);
+font: 700 14pt &quot;Perpetua Titling MT&quot;;
+
+</string>
+        </property>
+        <property name="text">
+         <string>  First Town</string>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="fCityEdge">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>40</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 250, 244);
+color: rgb(0, 0, 0);</string>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="sCityEdge">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>90</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 250, 244);
+color: rgb(0, 0, 0);</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="AddEdge">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>220</y>
+          <width>151</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+margin-left: 10px; border-radius: 25px;; color:  rgb(236, 100, 8);
+font: 700 14pt &quot;Terminal&quot;;
+background-color: rgb(255, 250, 244);
+background-color:  rgb(236, 100, 8);
+color:white;</string>
+        </property>
+        <property name="text">
+         <string>Add Edge</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="DeleteEdge">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>220</y>
+          <width>151</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+margin-left: 10px; border-radius: 25px;; color:  rgb(236, 100, 8);
+font: 700 14pt &quot;Terminal&quot;;
+background-color: rgb(255, 250, 244);
+background-color:  rgb(236, 100, 8);
+color:white;</string>
+        </property>
+        <property name="text">
+         <string>Remove Edge</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_37">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>90</y>
+          <width>161</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:  rgb(236, 100, 8);
+color:white;
+ color: rgb(255, 250, 244);
+font: 700 14pt &quot;Terminal&quot;;
+font: 700 12pt &quot;Perpetua Titling MT&quot;;</string>
+        </property>
+        <property name="text">
+         <string>  Second Town</string>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="dEdge">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>140</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 250, 244);
+color: rgb(0, 0, 0);
+</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_38">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>140</y>
+          <width>161</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:  rgb(236, 100, 8);
+color:white;
+ color: rgb(255, 250, 244);
+font: 700 14pt &quot;Terminal&quot;;
+font: 700 12pt &quot;Perpetua Titling MT&quot;;</string>
+        </property>
+        <property name="text">
+         <string>  DISTANCE</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_22">
+       <widget class="QLabel" name="label_39">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> color: rgb(255, 250, 244);
+font: 700 14pt &quot;Terminal&quot;;
+background-color:  rgb(236, 100, 8);
+color:white;
+font: 700 16pt &quot;Perpetua Titling MT&quot;;</string>
+        </property>
+        <property name="text">
+         <string>      Source</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_40">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>100</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:  rgb(236, 100, 8);
+color:white;
+font: 700 14pt &quot;Terminal&quot;;
+font: 700 14pt &quot;Perpetua Titling MT&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>  Destination</string>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="firstShort">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>40</y>
+          <width>161</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 250, 244);
+color: rgb(0, 0, 0);</string>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="secondShort">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>100</y>
+          <width>161</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 250, 244);
+color: rgb(0, 0, 0);</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>150</y>
+          <width>231</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QRadioButton" name="radio_Dijkstra">
+           <property name="styleSheet">
+            <string notr="true">
+background-color: rgb(236, 100, 8);
+margin-left: 10px; border-radius: 25px;; color: white;
+font: 700 14pt &quot;Terminal&quot;;
+
+color: rgb(255, 250, 244);</string>
+           </property>
+           <property name="text">
+            <string>Dijkstra</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radio_Bellman">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+margin-left: 10px; border-radius: 25px;; color: white;
+font: 700 14pt &quot;Terminal&quot;;
+color: rgb(255, 250, 244);</string>
+           </property>
+           <property name="text">
+            <string>Bellman Ford</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="startShort">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>270</y>
+          <width>151</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+margin-left: 10px; border-radius: 25px;; color:  rgb(236, 100, 8);
+font: 700 14pt &quot;Terminal&quot;;
+background-color: rgb(255, 250, 244);
+background-color:  rgb(236, 100, 8);
+color:white;
+</string>
+        </property>
+        <property name="text">
+         <string>Start</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="test_1">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>240</y>
+          <width>121</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>Min Distance :</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="mindistance">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>240</y>
+          <width>121</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>00</string>
+        </property>
+       </widget>
+       <widget class="QListWidget" name="graphText_2">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>-170</y>
+          <width>191</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 25px;
+background-color: rgb(255, 220, 130);
+background-color: rgb(255, 220, 102);
+background-color:rgb(0, 85, 0);
+padding:20px;</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="shortpath">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>532</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+margin-left: 10px; border-radius: 25px;; color: white;
+color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+font: 700 14pt &quot;Terminal&quot;;
+background-color:rgb(0, 85, 0);
+
+margin-left: 10px; border-radius: 25px;; color: white;</string>
+      </property>
+      <property name="text">
+       <string>Short Path</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="town">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>532</y>
+        <width>201</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+margin-left: 10px; border-radius: 25px;; color: white;
+font: 700 14pt &quot;Terminal&quot;;
+background-color:rgb(0, 85, 0);</string>
+      </property>
+      <property name="text">
+       <string>Town</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="traversal">
+      <property name="geometry">
+       <rect>
+        <x>990</x>
+        <y>530</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+margin-left: 10px; border-radius: 25px;; color: white;
+color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+font: 700 14pt &quot;Terminal&quot;;
+background-color:rgb(0, 85, 0);
+
+margin-left: 10px; border-radius: 25px;; color: white;</string>
+      </property>
+      <property name="text">
+       <string>Traversal</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>70</y>
+        <width>271</width>
+        <height>62</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QRadioButton" name="graph_gra">
+         <property name="styleSheet">
+          <string notr="true">color:rgb(3, 3, 3)</string>
+         </property>
+         <property name="text">
+          <string>Graphfics</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="graph_text">
+         <property name="styleSheet">
+          <string notr="true">color:rgb(3, 3, 3)</string>
+         </property>
+         <property name="text">
+          <string>Text </string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="test_">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>510</y>
+        <width>191</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="log">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>130</y>
+        <width>191</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> border-radius: 25px;
+background-color: rgb(255, 220, 130);
+background-color: rgb(255, 220, 102);
+background-color:rgb(0, 85, 0);
+padding:20px;
+color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="undo">
+      <property name="geometry">
+       <rect>
+        <x>1050</x>
+        <y>110</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+margin-left: 10px; border-radius: 25px;; color: white;
+color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+font: 700 14pt &quot;Terminal&quot;;
+background-color:rgb(0, 85, 0);
+
+margin-left: 10px; border-radius: 25px;; color: white;</string>
+      </property>
+      <property name="text">
+       <string>Undo</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="Console">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>190</y>
+        <width>301</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> border-radius: 25px;
+background-color: rgb(255, 220, 130);
+background-color: rgb(255, 220, 102);
+background-color:rgb(0, 85, 0);
+padding:20px;
+color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="theme">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>70</y>
+        <width>111</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size:14px;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Dark Blue</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ment Green</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Discord</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_42">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>40</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(3, 3, 3)</string>
+      </property>
+      <property name="text">
+       <string>Theme:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Back">
+      <property name="geometry">
+       <rect>
+        <x>1060</x>
+        <y>30</y>
+        <width>81</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+margin-left: 10px; border-radius: 25px;; color: white;
+color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+font: 700 14pt &quot;Terminal&quot;;
+background-color:rgb(0, 85, 0);
+
+margin-left: 10px; border-radius: 25px;; color: white;</string>
+      </property>
+      <property name="text">
+       <string>New</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Console_btn">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>630</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+margin-left: 10px; border-radius: 25px;; color: white;
+color: rgb(255, 255, 255);
+background-color: rgb(236, 100, 8);
+font: 700 14pt &quot;Terminal&quot;;
+background-color:rgb(0, 85, 0);
+font-size:12px;
+margin-left: 10px; border-radius: 25px;; color: white;</string>
+      </property>
+      <property name="text">
+       <string>Console</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

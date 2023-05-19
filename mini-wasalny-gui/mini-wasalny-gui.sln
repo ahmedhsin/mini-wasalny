@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mini-wasalny-gui", "mini-wasalny-gui.vcxproj", "{42E2508C-5895-3F9B-BE6E-A0045DA0F281}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42E2508C-5895-3F9B-BE6E-A0045DA0F281}.Debug|x64.ActiveCfg = Debug|x64
+		{42E2508C-5895-3F9B-BE6E-A0045DA0F281}.Debug|x64.Build.0 = Debug|x64
+		{42E2508C-5895-3F9B-BE6E-A0045DA0F281}.Release|x64.ActiveCfg = Release|x64
+		{42E2508C-5895-3F9B-BE6E-A0045DA0F281}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E60DEEC-83CC-4132-AAEA-73FBEA323A5C}
+	EndGlobalSection
+EndGlobal

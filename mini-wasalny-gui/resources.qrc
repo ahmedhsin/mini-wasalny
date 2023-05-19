@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/imgs">
+        <file>logo.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>fonts/Acme-Regular.ttf</file>
+        <file>fonts/Quicksand-Medium.ttf</file>
+    </qresource>
+</RCC>
