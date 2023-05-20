@@ -19,11 +19,8 @@ bool GraphMutator::AddEdge(string source, string destination, double Distance, b
     if (!adj.count(source) || !adj.count(destination))
         return false;
     Edge new_Edge = { destination, Distance, 1 };
-    for (auto city : adj[source]) {
-        if (city == new_Edge) {
-            return false;
-        }
-    }
+    if (adj[source].find(new_Edge))
+        return false;
     adj[source].insert(new_Edge);
     new_Edge.dest = source;
     new_Edge.valid = !Directed;
