@@ -24,7 +24,7 @@ bool GraphMutator::AddEdge(string source, string destination,double Distance,boo
     if (!adj.count(source) || !adj.count(destination))
         return false;
     Edge new_Edge = { destination, Distance, 1 };
-    if (adj[source].find(new_Edge))
+    if (adj[source].count(new_Edge))
         return false;
     adj[source].insert(new_Edge);
     new_Edge.dest = source;
