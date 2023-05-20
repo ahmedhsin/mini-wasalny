@@ -37,8 +37,6 @@ vector<string> GraphTraversal::DFS(string start, unordered_map<string, unordered
         s.pop();
 
         for (auto child : adj[current]) {
-            if (!child.valid)
-                continue;
             if (!visited[child.dest]) {
                 s.push(child.dest);
                 visited[child.dest] = true;
