@@ -1,0 +1,16 @@
+vector<edge> getEdgesBetweenVertices(unordered_map<string, unordered_set<edge, edgeHash>>& adj,
+    string& source, string& destination) {
+    vector<edge> edges;
+ 
+    auto it = adj.find(source);
+    if (it != adj.end()) {
+        unordered_set<edge, edgeHash>& sourceEdges = it->second;
+        for (auto& e : sourceEdges) {
+            if (e.destination == destination) {
+                edges.push_back(e);
+            }
+        }
+    }
+ 
+    return edges;
+}
